@@ -114,10 +114,11 @@ confident-but-wrong chunk drifts off-target and is unrecoverable for 50 steps
 and replans, correcting small errors before they compound (SUCCESS). The measured
 paired gains on the one matched seed pool (n=50): **push-v3 +22pp (56% to 78%,
 McNemar p=0.035)** and **plate-slide-v3 +54pp (46% to 100%, McNemar p~1e-8)**,
-monotone in horizon. This is train-free and is a *known* knob (receding-horizon /
-ACT temporal ensembling / Bidirectional Decoding / async chunking) costing ~5x
-inference — it is the **motivation and a positive preliminary number, not the
-contribution**.
+monotone in horizon. This is train-free and is a *known* knob — replanning more
+often is plain receding-horizon / ACT temporal ensembling, and the test-time
+chunking literature (BID arXiv:2408.17355, RTC arXiv:2506.07339) already exploits
+chunk overlap — costing ~5x inference. It is the **motivation and a positive
+preliminary number, not the contribution**.
 
 ### Proposed trained method (the contribution)
 To recover the closed-loop gain without paying 5x inference, a **small trained
@@ -125,9 +126,15 @@ replan-gate head** taps the frozen expert's features (plus the current step
 index) and makes a per-step **continue-vs-replan** decision. The frozen stack is
 re-run only when the gate fires, far less often than every 10 steps, targeting
 `h=10`-level success at roughly **1x open-loop compute**. Only this head is
-trainable; the entire SmolVLA stack stays frozen. Its novelty is
-**scoop-gated against BID (Bidirectional Decoding, NeurIPS 2024)**, the likely
-nearest prior art, which must be cleared before the method is claimed.
+trainable; the entire SmolVLA stack stays frozen. The honest bar: the learned gate
+must **beat fixed-frequency replanning at a matched replan budget** (smarter
+*when-to-replan*, not just *more-often*) — the raw closed-loop gain is a known knob,
+so a tie with fixed-frequency is a kill. Its novelty is **thin but present**: the
+nearest *trained* neighbor is **DCDP (arXiv:2603.01953)**, which trains modules that
+*correct the actions* via dynamics features — the gate instead decides *replan
+timing*. BID (arXiv:2408.17355) and RTC (arXiv:2506.07339) are *training-free*;
+Legato (arXiv:2602.12978) is *training-time* boundary smoothness. Not scooped by
+these four (citations verified against live abstracts), but the area is crowded.
 
 ### Paired-statistics eval protocol (the discipline)
 The guardrail that already caught one of our own false positives. Every

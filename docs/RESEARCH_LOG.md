@@ -192,28 +192,39 @@ This becomes the motivation and the preliminary number for the Horizon project.
 **Question.** Is the open-loop-gap result a paper by itself?
 
 **What we found (measured + literature).** The result is verified, but the
-train-free lever is a **KNOWN knob**: receding-horizon control / ACT temporal
-ensembling / **Bidirectional Decoding (BID, NeurIPS 2024 — closed-loop action-chunk
-resampling)** / real-time async chunking. And it is not free: it costs **~5×
-inference** (replan every 10 steps instead of 50). So the train-free version is the
-*motivation plus a positive preliminary number*, not a novel contribution.
+closed-loop lever is a **KNOWN knob**: replanning more often is plain receding-horizon
+control / ACT temporal ensembling, and the test-time chunking literature already
+exploits chunk overlap — **BID (Bidirectional Decoding, arXiv:2408.17355, ICLR 2025
+— training-free forward-backward chunk resampling)** and **RTC (Real-Time Chunking,
+arXiv:2506.07339 — training-free asynchronous execution scheduling)**. And it is not
+free: it costs **~5× inference** (replan every 10 steps instead of 50). So the
+closed-loop version, by itself, is the *motivation plus a positive preliminary
+number*, not a novel contribution.
 
 **Decision (current standing).**
 - **Keep** the open-loop-gap as the positive anchor and the motivation. State its
   ceiling plainly; do not overclaim a known knob as new.
-- The **proposed contribution** is a *trained, compute-efficient* version: a learned
-  replan-gate on frozen-expert features (fire a replan only when the current chunk
-  is going off), or distilling the closed-loop (h=10) policy into a single h=50
-  forward pass — recovering most of the +22/+54pp at near-1× compute. Evaluated
-  against a **vanilla-finetune control at matched compute**, so the claim is
-  "method > same compute spent naively," not "method > base."
-- This contribution is **SCOOP-GATED**: BID is the likely nearest prior art, and
-  the space (async chunking, learned termination, adaptive horizon) is crowded.
-  Novelty hinges entirely on the delegated web audit (PROPOSAL §6). **No method is
-  claimed novel until that audit returns UNCLAIMED.**
+- The **proposed contribution** is a *trained, lightweight adaptive replan-gate* on
+  the frozen flow-matching VLA: a learned head on frozen-expert features that fires a
+  replan only when the current chunk is going off (or distilling the closed-loop
+  h=10 policy into a single h=50 forward pass) — recovering most of the +22/+54pp at
+  near-1× compute. **The raw closed-loop gain is NOT the contribution** (it is a
+  known knob); the contribution is that the **learned gate must beat fixed-frequency
+  replanning at a matched replan budget** — smarter *when-to-replan*, not just
+  *more-often*. If it only ties fixed-frequency, it collapses to the known knob. Also
+  evaluated against a **vanilla-finetune control at matched compute**.
+- **Novelty is THIN BUT PRESENT** (PROPOSAL §6), verified against live arXiv
+  abstracts (a prior delegated scoop had hallucinated IDs, incl. a fabricated "Dyno"
+  citation — removed). The **nearest *trained* neighbor is DCDP (arXiv:2603.01953)**,
+  which trains modules that *correct the actions* via dynamics features — Horizon's
+  gate instead decides *replan timing*. BID (arXiv:2408.17355) and RTC
+  (arXiv:2506.07339) are *training-free*; Legato (arXiv:2602.12978) is *training-time*
+  chunk-boundary smoothness. Not scooped by these four, but the area is crowded and
+  active, so novelty is narrow — the §7 kill-gate is the load-bearing claim.
 - Reach-v3 stays banned as a headline task (floored outlier). All future numbers
   must use the paired-McNemar / one-seed-pool / matched-n / vanilla-FT-control
   discipline that caught our own +2pp false positive (entry 3).
 
-**Status: positive anchor verified; trained method proposed but scoop-gated;
-train-free knob honestly disclosed as known.**
+**Status: positive anchor verified; trained replan-gate proposed with thin-but-present
+novelty (differentiated vs DCDP / BID / RTC / Legato, citations verified against live
+abstracts); closed-loop knob honestly disclosed as known.**

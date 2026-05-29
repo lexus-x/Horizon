@@ -37,6 +37,10 @@ python cascade_eval.py --task plate-slide-v3 --mode base --n_action_steps 10 --o
 ```
 
 Shrinking the execution horizon (more frequent replanning) yields the large
-paired gain that motivates Horizon. Train-free this is a known knob (receding
-horizon / temporal ensembling / Bidirectional Decoding) costing ~5× inference;
-the proposed contribution is a trained, near-1× version.
+paired gain that motivates Horizon. This is a known knob — replanning more often
+is plain receding-horizon / temporal ensembling, and the test-time chunking
+literature (BID arXiv:2408.17355, RTC arXiv:2506.07339) already exploits chunk
+overlap — costing ~5× inference. The proposed contribution is a trained,
+lightweight adaptive replan-gate (learned *when-to-replan*) at near-1× compute;
+the nearest *trained* neighbor, DCDP (arXiv:2603.01953), corrects the actions
+rather than the replan timing.

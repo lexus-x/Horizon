@@ -1,8 +1,10 @@
 # Proposal scaffold — a trained intervention for frozen-pretrained flow-matching VLAs
 
-**Status: scaffold for a proposal (future work). The METHOD is a scoop-gated
-hypothesis, not a validated result.** Honesty rules: every claim below is either
-(a) measured this session, or (b) explicitly flagged as proposed/unverified.
+**Status: scaffold for a proposal (future work). The METHOD is a hypothesis with
+thin-but-present novelty (§6), not a validated result.** Honesty rules: every claim
+below is either (a) measured this session, or (b) explicitly flagged as
+proposed/unverified. Prior-art citations (§6) were verified against live arXiv
+abstracts.
 
 ---
 
@@ -111,26 +113,52 @@ compute spent vanilla", not "method > base").
   trivial.)*
 - `lerobot/metaworld_mt50` dataset; single-GPU; runs in minutes.
 
-## 6. Novelty gate (DELEGATED — run on a separate web AI before committing)
+## 6. Prior-art positioning (verified against live abstracts)
 
-> "Adversarial novelty audit, live web + arXiv. CONTEXT (measured): a frozen
-> flow-matching VLA (SmolVLA) executing 50-step action chunks open-loop loses
-> +22pp (push) / +54pp (plate, MetaWorld) vs replanning every 10 steps — but that
-> costs 5× inference. QUESTION: is it SCOOPED or UNCLAIMED to (A) train a
-> **lightweight LEARNED REPLAN GATE / adaptive closed-loop controller** on a frozen
-> pretrained VLA's expert features that recovers most of the closed-loop success
-> gain at **near-open-loop (1×) compute** (i.e. learn *when* to replan, or distill
-> the frequent-replan policy into one forward pass); (B) lightly finetune the
-> expert for **compositional/sequential** MetaWorld success. For (A) you MUST
-> directly classify and quote: **Bidirectional Decoding / BID (closed-loop action-
-> chunk resampling)**, **real-time / asynchronous action chunking**, **temporal
-> action ensembling (ACT)**, **learned early-termination / adaptive-horizon
-> policies**, and any **VLA inference-time replanning** work — does any already do
-> *trained, compute-efficient* adaptive replanning on a frozen VLA? For each: arXiv
-> ID (verify it resolves), and the single nearest prior art a reviewer cites. Also
-> position vs Recovery RL (2010.15920), A2C2 (2509.23224), Consistency Policy
-> (Prasad 2024), DAgger, SmolVLA/OpenVLA/π0. Do not invent IDs. END WITH: UNCLAIMED
-> or SCOOPED, and if SCOOPED name the exact paper that kills it."
+The novelty here is **thin but present**: the action-chunking / replanning space is
+crowded and active, but none of the four nearest papers do *trained, compute-
+efficient, when-to-replan gating on a frozen VLA*. The four IDs below were checked
+against **live arXiv abstracts** — a prior delegated scoop had hallucinated paper
+IDs (including a fabricated "Dyno" citation), which is why every ID here resolves.
+
+**Nearest *trained* neighbor — the cite-and-differentiate paper:**
+
+- **DCDP** — arXiv:2603.01953, *Closed-Loop Action Chunks with Dynamic Corrections
+  for Training-Free Diffusion Policy*. Despite "training-free" in its title for the
+  *base* policy, DCDP **trains** correction modules (a self-supervised dynamics
+  feature encoder + cross-attention + an asymmetric encoder-decoder) as a wrapper
+  on a frozen diffusion policy. Its mechanism is **learned action-correction**: it
+  *corrects the actions* using dynamics features. **Differentiator:** Horizon's gate
+  decides **replan *timing*** (when to re-invoke the frozen policy) and is
+  success/compute-oriented — it does not edit the actions. Different lever, same
+  frozen-policy-wrapper setting; this is the paper a reviewer cites and the one to
+  cite-and-differentiate.
+
+**Training-free test-time methods (Horizon *trains* a gate; these do not):**
+
+- **BID** — arXiv:2408.17355, *Bidirectional Decoding: Improving Action Chunking via
+  Guided Test-Time Sampling* (ICLR 2025). **Training-free** forward-backward
+  resampling of the action chunk at test time. No trained component.
+- **RTC** — arXiv:2506.07339, *Real-Time Execution of Action Chunking Flow Policies*
+  (Real-Time Chunking). **Training-free** asynchronous execution scheduling /
+  inpainting the overlap region. No trained component.
+
+**Training-time method (Horizon adds a frozen-policy gate; this reshapes training):**
+
+- **Legato** — arXiv:2602.12978, *Learning Native Continuation for Action Chunking
+  Flow Policies*. A **training-time** method that reshapes flow training for
+  chunk-boundary **smoothness / continuity** — not success-rate recovery, not a
+  frozen-policy add-on gate.
+
+**Verdict: UNCLAIMED by these four, but narrow.** Horizon's lever (learn *when* to
+replan on a frozen flow-matching VLA, judged against fixed-frequency replanning at a
+matched budget) is not done by DCDP (corrects actions), BID/RTC (training-free), or
+Legato (training-time smoothness). The area is crowded and moving fast, so the
+novelty bar is thin — which is why the §7 kill-gate (beat fixed-frequency at matched
+budget) is the load-bearing claim, not the raw closed-loop gain. For broader context
+also note Recovery RL (arXiv:2010.15920) and A2C2 (arXiv:2509.23224); Consistency
+Policy (Prasad 2024) is relevant only to the dead NIAC averaging idea (§3), not to
+the replan-gate.
 
 ## 7. Evaluation protocol (locked — the stats discipline that caught our own bug)
 
@@ -140,14 +168,22 @@ compute spent vanilla", not "method > base").
   eps/arm at 80% power — size accordingly or report as preliminary.)
 - **Controls**: base, **vanilla-finetune at matched compute**, method-finetune.
   Continuous metric (success + graded progress), not threshold-straddling.
-- **Kill-gate**: method must beat the vanilla-finetune control with non-overlapping
-  CIs, else it's "more training," not a method.
+- **Kill-gate (primary)**: the learned gate must **beat FIXED-FREQUENCY replanning
+  at a matched replan budget** (same number of replans, smarter placement). The raw
+  closed-loop gain is a known knob (receding-horizon); only *smarter when-to-replan*
+  is the contribution. If the gate merely ties fixed-frequency, it collapses to the
+  known knob — kill it.
+- **Kill-gate (secondary)**: method must also beat the vanilla-finetune control with
+  non-overlapping CIs, else it's "more training," not a method.
 
 ## 8. Risks (honest)
 
-- **Novelty**: the dominant risk. The method is unproven-novel until §6. If §6
-  returns SCOOPED on A and B, this path does not yield a publishable method and we
-  must relax a different constraint.
+- **Novelty**: the dominant risk. Novelty is **thin but present** (§6) — not
+  scooped by the four nearest papers (DCDP / BID / RTC / Legato), but the area is
+  crowded and active, so the margin is narrow. The contribution stands or falls on
+  the §7 kill-gate (the learned gate must beat fixed-frequency replanning at a
+  matched budget); if it only ties, it collapses to the known closed-loop knob and
+  this path does not yield a publishable method.
 - **Effect size**: prior probes returned null/small; the trained gain may also be
   small. Powered eval or it's unfalsifiable.
 - **Single-base generality**: results on `smolvla_metaworld` may not transfer.
