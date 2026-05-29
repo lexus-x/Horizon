@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Horizon: Closing the loop on frozen flow-matching VLAs"
+abstract: >-
+  Horizon studies the open-loop execution gap in frozen flow-matching
+  vision-language-action policies. A frozen SmolVLA action expert executes
+  50-step action chunks open-loop on MetaWorld; shrinking the execution horizon
+  (replanning more often, i.e. closing the loop) yields large paired success
+  gains. The repository curates the faithful evaluation harness, the falsified
+  swings (CASTLE, STL-GDPA, NIAC averaging, dispersion-predicts-failure), and
+  the positive open-loop-gap evidence that motivates a trained, compute-efficient
+  closed-loop method.
+type: software
+authors:
+  - name: "lexus-x / Horizon project"
+version: "0.1.0"
+date-released: "2026-05-30"
+license: MIT
+keywords:
+  - vision-language-action
+  - flow-matching
+  - SmolVLA
+  - MetaWorld
+  - closed-loop control
+  - open-loop execution gap

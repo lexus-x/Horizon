@@ -1,0 +1,448 @@
+{
+  "survey": [
+    {
+      "task": "reach-v3",
+      "pooled_success_pct": 27.77777777777778,
+      "wilson95_lo": 19.57955914762625,
+      "wilson95_hi": 37.795421671115115,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        36.666666666666664,
+        26.666666666666668,
+        20.0
+      ],
+      "seed_rate_std": 6.84934889218775,
+      "mean_avg_max_reward": 8.07556820531573,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 36.666666666666664,
+          "n": 30,
+          "avg_max_reward": 8.015485685663817
+        },
+        {
+          "seed": 2000,
+          "pc_success": 26.666666666666668,
+          "n": 30,
+          "avg_max_reward": 8.459138363472832
+        },
+        {
+          "seed": 3000,
+          "pc_success": 20.0,
+          "n": 30,
+          "avg_max_reward": 7.752080566810537
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "button-press-v3",
+      "pooled_success_pct": 93.33333333333333,
+      "wilson95_lo": 86.20973805849326,
+      "wilson95_hi": 96.90904934496108,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        96.66666666666667,
+        93.33333333333333,
+        90.0
+      ],
+      "seed_rate_std": 2.7216552697590886,
+      "mean_avg_max_reward": 1.484923488369897,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 96.66666666666667,
+          "n": 30,
+          "avg_max_reward": 1.4976878772091298
+        },
+        {
+          "seed": 2000,
+          "pc_success": 93.33333333333333,
+          "n": 30,
+          "avg_max_reward": 1.4781838604399498
+        },
+        {
+          "seed": 3000,
+          "pc_success": 90.0,
+          "n": 30,
+          "avg_max_reward": 1.4788987274606114
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "drawer-open-v3",
+      "pooled_success_pct": 66.66666666666667,
+      "wilson95_lo": 56.42212433918371,
+      "wilson95_hi": 75.54664004676025,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        66.66666666666666,
+        80.0,
+        53.333333333333336
+      ],
+      "seed_rate_std": 10.886621079036345,
+      "mean_avg_max_reward": 5.8891510629899075,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 66.66666666666666,
+          "n": 30,
+          "avg_max_reward": 5.918777844597555
+        },
+        {
+          "seed": 2000,
+          "pc_success": 80.0,
+          "n": 30,
+          "avg_max_reward": 6.701651673098735
+        },
+        {
+          "seed": 3000,
+          "pc_success": 53.333333333333336,
+          "n": 30,
+          "avg_max_reward": 5.0470236712734335
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "pick-place-v3",
+      "pooled_success_pct": 7.777777777777778,
+      "wilson95_lo": 3.818432959772764,
+      "wilson95_hi": 15.194030595835835,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        6.666666666666667,
+        3.3333333333333335,
+        13.333333333333334
+      ],
+      "seed_rate_std": 4.15739709641549,
+      "mean_avg_max_reward": 0.6127637859451546,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 6.666666666666667,
+          "n": 30,
+          "avg_max_reward": 0.6798485465182286
+        },
+        {
+          "seed": 2000,
+          "pc_success": 3.3333333333333335,
+          "n": 30,
+          "avg_max_reward": 0.298030432020177
+        },
+        {
+          "seed": 3000,
+          "pc_success": 13.333333333333334,
+          "n": 30,
+          "avg_max_reward": 0.8604123792970583
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "peg-insert-side-v3",
+      "pooled_success_pct": 40.0,
+      "wilson95_lo": 30.488859176782825,
+      "wilson95_hi": 50.32988219165079,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 5.497161707712293,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 40.0,
+          "n": 30,
+          "avg_max_reward": 5.579841493401358
+        },
+        {
+          "seed": 2000,
+          "pc_success": 40.0,
+          "n": 30,
+          "avg_max_reward": 5.3930041823958135
+        },
+        {
+          "seed": 3000,
+          "pc_success": 40.0,
+          "n": 30,
+          "avg_max_reward": 5.51863944733971
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "push-v3",
+      "pooled_success_pct": 57.77777777777778,
+      "wilson95_lo": 47.46099802268749,
+      "wilson95_hi": 67.45775869075304,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        60.0,
+        63.33333333333333,
+        50.0
+      ],
+      "seed_rate_std": 5.665577237325315,
+      "mean_avg_max_reward": 6.637418875357663,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 60.0,
+          "n": 30,
+          "avg_max_reward": 6.748519580144181
+        },
+        {
+          "seed": 2000,
+          "pc_success": 63.33333333333333,
+          "n": 30,
+          "avg_max_reward": 7.090132701388035
+        },
+        {
+          "seed": 3000,
+          "pc_success": 50.0,
+          "n": 30,
+          "avg_max_reward": 6.073604344540771
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "door-open-v3",
+      "pooled_success_pct": 80.0,
+      "wilson95_lo": 70.58607285729566,
+      "wilson95_hi": 86.9577030374035,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        83.33333333333334,
+        83.33333333333334,
+        73.33333333333333
+      ],
+      "seed_rate_std": 4.714045207910323,
+      "mean_avg_max_reward": 9.055203650344211,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 83.33333333333334,
+          "n": 30,
+          "avg_max_reward": 9.153202754240196
+        },
+        {
+          "seed": 2000,
+          "pc_success": 83.33333333333334,
+          "n": 30,
+          "avg_max_reward": 9.266402271324296
+        },
+        {
+          "seed": 3000,
+          "pc_success": 73.33333333333333,
+          "n": 30,
+          "avg_max_reward": 8.746005925468138
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "window-open-v3",
+      "pooled_success_pct": 50.0,
+      "wilson95_lo": 39.883544540986605,
+      "wilson95_hi": 60.116455459013395,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        43.333333333333336,
+        63.33333333333333,
+        43.333333333333336
+      ],
+      "seed_rate_std": 9.42809041582063,
+      "mean_avg_max_reward": 2.3011042345074095,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 43.333333333333336,
+          "n": 30,
+          "avg_max_reward": 2.1265927137560503
+        },
+        {
+          "seed": 2000,
+          "pc_success": 63.33333333333333,
+          "n": 30,
+          "avg_max_reward": 3.0528599556205145
+        },
+        {
+          "seed": 3000,
+          "pc_success": 43.333333333333336,
+          "n": 30,
+          "avg_max_reward": 1.7238600341456638
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "handle-press-v3",
+      "pooled_success_pct": 98.88888888888889,
+      "wilson95_lo": 93.97144555232022,
+      "wilson95_hi": 99.80359664644875,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        100.0,
+        96.66666666666667,
+        100.0
+      ],
+      "seed_rate_std": 1.57134840263677,
+      "mean_avg_max_reward": 9.896578115698794,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 100.0,
+          "n": 30,
+          "avg_max_reward": 10.0
+        },
+        {
+          "seed": 2000,
+          "pc_success": 96.66666666666667,
+          "n": 30,
+          "avg_max_reward": 9.689734347096381
+        },
+        {
+          "seed": 3000,
+          "pc_success": 100.0,
+          "n": 30,
+          "avg_max_reward": 10.0
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "coffee-button-v3",
+      "pooled_success_pct": 100.0,
+      "wilson95_lo": 95.90629315783191,
+      "wilson95_hi": 99.99999999999999,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 1.1098195061793692,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 100.0,
+          "n": 30,
+          "avg_max_reward": 1.138859552764285
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 30,
+          "avg_max_reward": 1.1099922854364825
+        },
+        {
+          "seed": 3000,
+          "pc_success": 100.0,
+          "n": 30,
+          "avg_max_reward": 1.08060668033734
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "plate-slide-v3",
+      "pooled_success_pct": 46.666666666666664,
+      "wilson95_lo": 36.70825183252626,
+      "wilson95_hi": 56.89799529028493,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        40.0,
+        46.666666666666664,
+        53.333333333333336
+      ],
+      "seed_rate_std": 5.4433105395181745,
+      "mean_avg_max_reward": 4.792193435817125,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 40.0,
+          "n": 30,
+          "avg_max_reward": 4.397094358738585
+        },
+        {
+          "seed": 2000,
+          "pc_success": 46.666666666666664,
+          "n": 30,
+          "avg_max_reward": 5.188256915854102
+        },
+        {
+          "seed": 3000,
+          "pc_success": 53.333333333333336,
+          "n": 30,
+          "avg_max_reward": 4.791229032858689
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "faucet-open-v3",
+      "pooled_success_pct": 82.22222222222223,
+      "wilson95_lo": 73.05591926397842,
+      "wilson95_hi": 88.75035854884658,
+      "pooled_n": 90,
+      "seed_rates_pct": [
+        83.33333333333334,
+        76.66666666666667,
+        86.66666666666667
+      ],
+      "seed_rate_std": 4.15739709641549,
+      "mean_avg_max_reward": 9.155219826431471,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 83.33333333333334,
+          "n": 30,
+          "avg_max_reward": 9.003150192805096
+        },
+        {
+          "seed": 2000,
+          "pc_success": 76.66666666666667,
+          "n": 30,
+          "avg_max_reward": 9.108612578717448
+        },
+        {
+          "seed": 3000,
+          "pc_success": 86.66666666666667,
+          "n": 30,
+          "avg_max_reward": 9.353896707771874
+        }
+      ],
+      "midband": false
+    }
+  ],
+  "config": {
+    "tasks": [
+      "reach-v3",
+      "button-press-v3",
+      "drawer-open-v3",
+      "pick-place-v3",
+      "peg-insert-side-v3",
+      "push-v3",
+      "door-open-v3",
+      "window-open-v3",
+      "handle-press-v3",
+      "coffee-button-v3",
+      "plate-slide-v3",
+      "faucet-open-v3"
+    ],
+    "seeds": [
+      1000,
+      2000,
+      3000
+    ],
+    "n_episodes": 30,
+    "ckpt": "/home/user/Desktop/vla_projects/RESEARCH/active/_harness-faithful-smolvla/ckpt_smolvla_metaworld"
+  },
+  "wall_s": 3303.8574752807617
+}

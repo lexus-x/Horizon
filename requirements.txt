@@ -1,0 +1,21 @@
+# Horizon dependencies.
+# Intent only — versions are not hard-pinned; install against your CUDA/lerobot setup.
+
+# Frozen SmolVLA policy + MetaWorld eval pipeline (env, processors, eval_policy).
+# Provides lerobot.policies.smolvla, lerobot.envs (MetaWorld), lerobot.scripts.lerobot_eval.
+lerobot
+
+# Core tensor / policy runtime.
+torch
+
+# Array math, JSON-serializable result records, dispersion/medoid computations.
+numpy
+
+# AUROC for the dispersion -> failure premise test (sklearn.metrics.roc_auc_score).
+scikit-learn
+
+# Figure rendering (open_loop_gap, niac_null, dispersion_failure, etc.).
+matplotlib
+
+# Statistics (used alongside the Wilson-CI / paired-McNemar analysis).
+scipy
