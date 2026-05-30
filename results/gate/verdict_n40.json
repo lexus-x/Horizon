@@ -1,0 +1,217 @@
+{
+  "tasks": {
+    "push-v3": {
+      "val_corr": 0.7894361191963215,
+      "fixed_curve": [
+        {
+          "mode": "base",
+          "horizon": 50,
+          "budget": 5.85,
+          "success": 55.00000000000001
+        },
+        {
+          "mode": "fixed",
+          "horizon": 25,
+          "budget": 7.78,
+          "success": 72.5
+        },
+        {
+          "mode": "fixed",
+          "horizon": 15,
+          "budget": 14.97,
+          "success": 65.0
+        },
+        {
+          "mode": "fixed",
+          "horizon": 10,
+          "budget": 22.9,
+          "success": 62.5
+        },
+        {
+          "mode": "fixed",
+          "horizon": 8,
+          "budget": 27.82,
+          "success": 65.0
+        }
+      ],
+      "gate_curve": [
+        {
+          "tau_q": 0.95,
+          "gate_budget": 14.7,
+          "gate_success": 60.0,
+          "in_budget_range": true,
+          "fixed_interp_success_at_budget": 65.29,
+          "delta_vs_fixed_curve": -5.29,
+          "nearest_fixed": {
+            "mode": "fixed",
+            "horizon": 15,
+            "budget": 14.975,
+            "success": 65.0
+          },
+          "mcnemar_gate_wins": 7,
+          "mcnemar_fixed_wins": 9,
+          "mcnemar_p": 0.8036
+        },
+        {
+          "tau_q": 0.9,
+          "gate_budget": 17.025,
+          "gate_success": 75.0,
+          "in_budget_range": true,
+          "fixed_interp_success_at_budget": 64.35,
+          "delta_vs_fixed_curve": 10.65,
+          "nearest_fixed": {
+            "mode": "fixed",
+            "horizon": 15,
+            "budget": 14.975,
+            "success": 65.0
+          },
+          "mcnemar_gate_wins": 9,
+          "mcnemar_fixed_wins": 5,
+          "mcnemar_p": 0.424
+        },
+        {
+          "tau_q": 0.8,
+          "gate_budget": 70.05,
+          "gate_success": 57.49999999999999,
+          "in_budget_range": false,
+          "fixed_interp_success_at_budget": null,
+          "delta_vs_fixed_curve": null,
+          "nearest_fixed": {
+            "mode": "fixed",
+            "horizon": 8,
+            "budget": 27.825,
+            "success": 65.0
+          },
+          "mcnemar_gate_wins": 5,
+          "mcnemar_fixed_wins": 8,
+          "mcnemar_p": 0.5811
+        }
+      ],
+      "best_gate": {
+        "tau_q": 0.9,
+        "gate_budget": 17.025,
+        "gate_success": 75.0,
+        "in_budget_range": true,
+        "fixed_interp_success_at_budget": 64.35,
+        "delta_vs_fixed_curve": 10.65,
+        "nearest_fixed": {
+          "mode": "fixed",
+          "horizon": 15,
+          "budget": 14.975,
+          "success": 65.0
+        },
+        "mcnemar_gate_wins": 9,
+        "mcnemar_fixed_wins": 5,
+        "mcnemar_p": 0.424
+      },
+      "beats_fixed_at_matched_budget": false
+    },
+    "plate-slide-v3": {
+      "val_corr": 0.7768912914478773,
+      "fixed_curve": [
+        {
+          "mode": "base",
+          "horizon": 50,
+          "budget": 6.0,
+          "success": 50.0
+        },
+        {
+          "mode": "fixed",
+          "horizon": 25,
+          "budget": 3.0,
+          "success": 100.0
+        },
+        {
+          "mode": "fixed",
+          "horizon": 15,
+          "budget": 4.33,
+          "success": 100.0
+        },
+        {
+          "mode": "fixed",
+          "horizon": 10,
+          "budget": 6.35,
+          "success": 100.0
+        },
+        {
+          "mode": "fixed",
+          "horizon": 8,
+          "budget": 8.0,
+          "success": 100.0
+        }
+      ],
+      "gate_curve": [
+        {
+          "tau_q": 0.95,
+          "gate_budget": 6.525,
+          "gate_success": 45.0,
+          "in_budget_range": true,
+          "fixed_interp_success_at_budget": 100.0,
+          "delta_vs_fixed_curve": -55.0,
+          "nearest_fixed": {
+            "mode": "fixed",
+            "horizon": 10,
+            "budget": 6.35,
+            "success": 100.0
+          },
+          "mcnemar_gate_wins": 0,
+          "mcnemar_fixed_wins": 22,
+          "mcnemar_p": 0.0
+        },
+        {
+          "tau_q": 0.9,
+          "gate_budget": 8.375,
+          "gate_success": 97.5,
+          "in_budget_range": false,
+          "fixed_interp_success_at_budget": null,
+          "delta_vs_fixed_curve": null,
+          "nearest_fixed": {
+            "mode": "fixed",
+            "horizon": 8,
+            "budget": 8.0,
+            "success": 100.0
+          },
+          "mcnemar_gate_wins": 0,
+          "mcnemar_fixed_wins": 1,
+          "mcnemar_p": 1.0
+        },
+        {
+          "tau_q": 0.8,
+          "gate_budget": 26.65,
+          "gate_success": 92.5,
+          "in_budget_range": false,
+          "fixed_interp_success_at_budget": null,
+          "delta_vs_fixed_curve": null,
+          "nearest_fixed": {
+            "mode": "fixed",
+            "horizon": 8,
+            "budget": 8.0,
+            "success": 100.0
+          },
+          "mcnemar_gate_wins": 0,
+          "mcnemar_fixed_wins": 3,
+          "mcnemar_p": 0.25
+        }
+      ],
+      "best_gate": {
+        "tau_q": 0.95,
+        "gate_budget": 6.525,
+        "gate_success": 45.0,
+        "in_budget_range": true,
+        "fixed_interp_success_at_budget": 100.0,
+        "delta_vs_fixed_curve": -55.0,
+        "nearest_fixed": {
+          "mode": "fixed",
+          "horizon": 10,
+          "budget": 6.35,
+          "success": 100.0
+        },
+        "mcnemar_gate_wins": 0,
+        "mcnemar_fixed_wins": 22,
+        "mcnemar_p": 0.0
+      },
+      "beats_fixed_at_matched_budget": false
+    }
+  },
+  "summary": "Gate beats fixed-frequency at matched budget on 0/2 tasks. KILL-GATE NOT PASSED on all tasks \u2014 where it only ties, the gate collapses to the known receding-horizon knob."
+}
