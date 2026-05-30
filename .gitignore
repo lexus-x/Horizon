@@ -12,3 +12,9 @@ ENV/
 
 # OS
 .DS_Store
+
+# Horizon gate working dir + run logs (reproducible; deliverables live in results/gate/)
+src/gate_artifacts/
+*driver*.log
+*.output
+.claude/
