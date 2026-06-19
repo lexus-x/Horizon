@@ -1,0 +1,1117 @@
+{
+  "survey": [
+    {
+      "task": "assembly-v3",
+      "pooled_success_pct": 35.0,
+      "wilson95_lo": 22.13433317104915,
+      "wilson95_hi": 50.494403006462626,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        30.0,
+        40.0
+      ],
+      "seed_rate_std": 5.0,
+      "mean_avg_max_reward": 6.690884078846955,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 30.0,
+          "n": 20,
+          "avg_max_reward": 6.467665543808527
+        },
+        {
+          "seed": 2000,
+          "pc_success": 40.0,
+          "n": 20,
+          "avg_max_reward": 6.914102613885383
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "basketball-v3",
+      "pooled_success_pct": 12.5,
+      "wilson95_lo": 5.459419773541284,
+      "wilson95_hi": 26.112420670238144,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        10.0,
+        15.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 2.0839454428175155,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 10.0,
+          "n": 20,
+          "avg_max_reward": 1.615806797147999
+        },
+        {
+          "seed": 2000,
+          "pc_success": 15.0,
+          "n": 20,
+          "avg_max_reward": 2.552084088487032
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "bin-picking-v3",
+      "pooled_success_pct": 45.0,
+      "wilson95_lo": 30.705075280944694,
+      "wilson95_hi": 60.171170111559235,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        40.0,
+        50.0
+      ],
+      "seed_rate_std": 5.0,
+      "mean_avg_max_reward": 4.8915249013406115,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 40.0,
+          "n": 20,
+          "avg_max_reward": 4.108049840230086
+        },
+        {
+          "seed": 2000,
+          "pc_success": 50.0,
+          "n": 20,
+          "avg_max_reward": 5.674999962451137
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "box-close-v3",
+      "pooled_success_pct": 35.0,
+      "wilson95_lo": 22.13433317104915,
+      "wilson95_hi": 50.494403006462626,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        35.0,
+        35.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 4.3733512337272025,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 35.0,
+          "n": 20,
+          "avg_max_reward": 4.464000667470668
+        },
+        {
+          "seed": 2000,
+          "pc_success": 35.0,
+          "n": 20,
+          "avg_max_reward": 4.282701799983737
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "button-press-topdown-v3",
+      "pooled_success_pct": 97.5,
+      "wilson95_lo": 87.11834051199223,
+      "wilson95_hi": 99.55732825922053,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        95.0,
+        100.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 4.291508274079922,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 95.0,
+          "n": 20,
+          "avg_max_reward": 4.270403984655172
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 4.312612563504673
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "button-press-topdown-wall-v3",
+      "pooled_success_pct": 100.0,
+      "wilson95_lo": 91.23754607496078,
+      "wilson95_hi": 100.0,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        100.0,
+        100.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 0.5278290023707397,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 0.5198455470484965
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 0.5358124576929828
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "button-press-wall-v3",
+      "pooled_success_pct": 97.5,
+      "wilson95_lo": 87.11834051199223,
+      "wilson95_hi": 99.55732825922053,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        95.0,
+        100.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 7.490007952259196,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 95.0,
+          "n": 20,
+          "avg_max_reward": 7.476408088950043
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 7.5036078155683485
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "coffee-pull-v3",
+      "pooled_success_pct": 32.5,
+      "wilson95_lo": 20.084316962661724,
+      "wilson95_hi": 47.98254191110201,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        30.0,
+        35.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 1.9278725834641601,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 30.0,
+          "n": 20,
+          "avg_max_reward": 1.8858320666513233
+        },
+        {
+          "seed": 2000,
+          "pc_success": 35.0,
+          "n": 20,
+          "avg_max_reward": 1.969913100276997
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "coffee-push-v3",
+      "pooled_success_pct": 77.5,
+      "wilson95_lo": 62.496603595906954,
+      "wilson95_hi": 87.68404674532148,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        75.0,
+        80.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 3.6995760230203993,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 75.0,
+          "n": 20,
+          "avg_max_reward": 3.272872284760511
+        },
+        {
+          "seed": 2000,
+          "pc_success": 80.0,
+          "n": 20,
+          "avg_max_reward": 4.126279761280287
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "dial-turn-v3",
+      "pooled_success_pct": 5.0,
+      "wilson95_lo": 1.3820377146101097,
+      "wilson95_hi": 16.5041708179252,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        10.0,
+        0.0
+      ],
+      "seed_rate_std": 5.0,
+      "mean_avg_max_reward": 3.451493898751175,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 10.0,
+          "n": 20,
+          "avg_max_reward": 4.006659686911821
+        },
+        {
+          "seed": 2000,
+          "pc_success": 0.0,
+          "n": 20,
+          "avg_max_reward": 2.896328110590529
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "disassemble-v3",
+      "pooled_success_pct": 57.5,
+      "wilson95_lo": 42.194800436059985,
+      "wilson95_hi": 71.49083147518411,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        50.0,
+        65.0
+      ],
+      "seed_rate_std": 7.5,
+      "mean_avg_max_reward": 6.124281984505826,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 50.0,
+          "n": 20,
+          "avg_max_reward": 5.480819471009662
+        },
+        {
+          "seed": 2000,
+          "pc_success": 65.0,
+          "n": 20,
+          "avg_max_reward": 6.767744498001991
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "door-close-v3",
+      "pooled_success_pct": 100.0,
+      "wilson95_lo": 91.23754607496078,
+      "wilson95_hi": 100.0,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        100.0,
+        100.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 8.662305431143501,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 8.67263633555326
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 8.651974526733742
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "door-lock-v3",
+      "pooled_success_pct": 65.0,
+      "wilson95_lo": 49.50559699353738,
+      "wilson95_hi": 77.86566682895086,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        65.0,
+        65.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 6.2282735313710305,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 65.0,
+          "n": 20,
+          "avg_max_reward": 6.492025487349909
+        },
+        {
+          "seed": 2000,
+          "pc_success": 65.0,
+          "n": 20,
+          "avg_max_reward": 5.964521575392151
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "door-unlock-v3",
+      "pooled_success_pct": 80.0,
+      "wilson95_lo": 65.24239261814333,
+      "wilson95_hi": 89.50013502683314,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        70.0,
+        90.0
+      ],
+      "seed_rate_std": 10.0,
+      "mean_avg_max_reward": 7.390132935069178,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 70.0,
+          "n": 20,
+          "avg_max_reward": 7.132588667923038
+        },
+        {
+          "seed": 2000,
+          "pc_success": 90.0,
+          "n": 20,
+          "avg_max_reward": 7.647677202215318
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "drawer-close-v3",
+      "pooled_success_pct": 100.0,
+      "wilson95_lo": 91.23754607496078,
+      "wilson95_hi": 100.0,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        100.0,
+        100.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 10.0,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 10.0
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 10.0
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "faucet-close-v3",
+      "pooled_success_pct": 25.0,
+      "wilson95_lo": 14.186967895549518,
+      "wilson95_hi": 40.194259066970105,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        20.0,
+        30.0
+      ],
+      "seed_rate_std": 5.0,
+      "mean_avg_max_reward": 6.047117417665421,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 20.0,
+          "n": 20,
+          "avg_max_reward": 5.598589639408973
+        },
+        {
+          "seed": 2000,
+          "pc_success": 30.0,
+          "n": 20,
+          "avg_max_reward": 6.4956451959218695
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "hammer-v3",
+      "pooled_success_pct": 42.5,
+      "wilson95_lo": 28.509168524815877,
+      "wilson95_hi": 57.805199563940015,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        35.0,
+        50.0
+      ],
+      "seed_rate_std": 7.5,
+      "mean_avg_max_reward": 5.459080557932072,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 35.0,
+          "n": 20,
+          "avg_max_reward": 4.896517509992263
+        },
+        {
+          "seed": 2000,
+          "pc_success": 50.0,
+          "n": 20,
+          "avg_max_reward": 6.021643605871882
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "hand-insert-v3",
+      "pooled_success_pct": 15.0,
+      "wilson95_lo": 7.061091708507434,
+      "wilson95_hi": 29.072626039020026,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        5.0,
+        25.0
+      ],
+      "seed_rate_std": 10.0,
+      "mean_avg_max_reward": 2.0895808018084985,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 5.0,
+          "n": 20,
+          "avg_max_reward": 1.576616882274057
+        },
+        {
+          "seed": 2000,
+          "pc_success": 25.0,
+          "n": 20,
+          "avg_max_reward": 2.6025447213429405
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "handle-press-side-v3",
+      "pooled_success_pct": 100.0,
+      "wilson95_lo": 91.23754607496078,
+      "wilson95_hi": 100.0,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        100.0,
+        100.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 10.0,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 10.0
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 10.0
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "handle-pull-side-v3",
+      "pooled_success_pct": 0.0,
+      "wilson95_lo": 0.0,
+      "wilson95_hi": 8.762453925039232,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        0.0,
+        0.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 0.1457947820918602,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 0.0,
+          "n": 20,
+          "avg_max_reward": 0.1506824743637749
+        },
+        {
+          "seed": 2000,
+          "pc_success": 0.0,
+          "n": 20,
+          "avg_max_reward": 0.14090708981994546
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "handle-pull-v3",
+      "pooled_success_pct": 12.5,
+      "wilson95_lo": 5.459419773541284,
+      "wilson95_hi": 26.112420670238144,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        20.0,
+        5.0
+      ],
+      "seed_rate_std": 7.5,
+      "mean_avg_max_reward": 3.6113721749292673,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 20.0,
+          "n": 20,
+          "avg_max_reward": 3.997247304016444
+        },
+        {
+          "seed": 2000,
+          "pc_success": 5.0,
+          "n": 20,
+          "avg_max_reward": 3.225497045842091
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "lever-pull-v3",
+      "pooled_success_pct": 12.5,
+      "wilson95_lo": 5.459419773541284,
+      "wilson95_hi": 26.112420670238144,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        20.0,
+        5.0
+      ],
+      "seed_rate_std": 7.5,
+      "mean_avg_max_reward": 1.6386201438201535,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 20.0,
+          "n": 20,
+          "avg_max_reward": 1.9651487791547289
+        },
+        {
+          "seed": 2000,
+          "pc_success": 5.0,
+          "n": 20,
+          "avg_max_reward": 1.312091508485578
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "peg-unplug-side-v3",
+      "pooled_success_pct": 37.5,
+      "wilson95_lo": 24.22277353579172,
+      "wilson95_hi": 52.9678399454681,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        30.0,
+        45.0
+      ],
+      "seed_rate_std": 7.5,
+      "mean_avg_max_reward": 2.4008991935169144,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 30.0,
+          "n": 20,
+          "avg_max_reward": 2.272331219167318
+        },
+        {
+          "seed": 2000,
+          "pc_success": 45.0,
+          "n": 20,
+          "avg_max_reward": 2.529467167866511
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "pick-out-of-hole-v3",
+      "pooled_success_pct": 5.0,
+      "wilson95_lo": 1.3820377146101097,
+      "wilson95_hi": 16.5041708179252,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        10.0,
+        0.0
+      ],
+      "seed_rate_std": 5.0,
+      "mean_avg_max_reward": 0.5215606233635116,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 10.0,
+          "n": 20,
+          "avg_max_reward": 0.9209508163033782
+        },
+        {
+          "seed": 2000,
+          "pc_success": 0.0,
+          "n": 20,
+          "avg_max_reward": 0.12217043042364509
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "pick-place-wall-v3",
+      "pooled_success_pct": 7.5,
+      "wilson95_lo": 2.5835556771858226,
+      "wilson95_hi": 19.864530159097523,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        10.0,
+        5.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 0.6038018311736855,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 10.0,
+          "n": 20,
+          "avg_max_reward": 0.8650693893432617
+        },
+        {
+          "seed": 2000,
+          "pc_success": 5.0,
+          "n": 20,
+          "avg_max_reward": 0.3425342730041091
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "plate-slide-back-side-v3",
+      "pooled_success_pct": 97.5,
+      "wilson95_lo": 87.11834051199223,
+      "wilson95_hi": 99.55732825922053,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        95.0,
+        100.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 7.789157040539725,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 95.0,
+          "n": 20,
+          "avg_max_reward": 7.635490174528954
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 7.942823906550496
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "plate-slide-back-v3",
+      "pooled_success_pct": 17.5,
+      "wilson95_lo": 8.745302996883066,
+      "wilson95_hi": 31.95029205439244,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        20.0,
+        15.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 1.697725714211554,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 20.0,
+          "n": 20,
+          "avg_max_reward": 1.9564936074516581
+        },
+        {
+          "seed": 2000,
+          "pc_success": 15.0,
+          "n": 20,
+          "avg_max_reward": 1.4389578209714498
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "plate-slide-side-v3",
+      "pooled_success_pct": 100.0,
+      "wilson95_lo": 91.23754607496078,
+      "wilson95_hi": 100.0,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        100.0,
+        100.0
+      ],
+      "seed_rate_std": 0.0,
+      "mean_avg_max_reward": 7.524356664871016,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 7.701560704857469
+        },
+        {
+          "seed": 2000,
+          "pc_success": 100.0,
+          "n": 20,
+          "avg_max_reward": 7.347152624884562
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "push-back-v3",
+      "pooled_success_pct": 42.5,
+      "wilson95_lo": 28.509168524815877,
+      "wilson95_hi": 57.805199563940015,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        35.0,
+        50.0
+      ],
+      "seed_rate_std": 7.5,
+      "mean_avg_max_reward": 0.7221599397100115,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 35.0,
+          "n": 20,
+          "avg_max_reward": 0.848321935910783
+        },
+        {
+          "seed": 2000,
+          "pc_success": 50.0,
+          "n": 20,
+          "avg_max_reward": 0.59599794350924
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "push-wall-v3",
+      "pooled_success_pct": 82.5,
+      "wilson95_lo": 68.04970794560755,
+      "wilson95_hi": 91.25469700311693,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        80.0,
+        85.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 7.402152954683306,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 80.0,
+          "n": 20,
+          "avg_max_reward": 7.491968867472529
+        },
+        {
+          "seed": 2000,
+          "pc_success": 85.0,
+          "n": 20,
+          "avg_max_reward": 7.312337041894082
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "reach-wall-v3",
+      "pooled_success_pct": 62.5,
+      "wilson95_lo": 47.032160054531914,
+      "wilson95_hi": 75.7772264642083,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        60.0,
+        65.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 9.753117322247753,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 60.0,
+          "n": 20,
+          "avg_max_reward": 9.776304944460566
+        },
+        {
+          "seed": 2000,
+          "pc_success": 65.0,
+          "n": 20,
+          "avg_max_reward": 9.72992970003494
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "shelf-place-v3",
+      "pooled_success_pct": 32.5,
+      "wilson95_lo": 20.084316962661724,
+      "wilson95_hi": 47.98254191110201,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        30.0,
+        35.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 2.201753173098151,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 30.0,
+          "n": 20,
+          "avg_max_reward": 2.030478050522583
+        },
+        {
+          "seed": 2000,
+          "pc_success": 35.0,
+          "n": 20,
+          "avg_max_reward": 2.373028295673719
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "soccer-v3",
+      "pooled_success_pct": 2.5,
+      "wilson95_lo": 0.44267174077949195,
+      "wilson95_hi": 12.881659488007779,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        0.0,
+        5.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 1.2815862674364573,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 0.0,
+          "n": 20,
+          "avg_max_reward": 1.1409034324759266
+        },
+        {
+          "seed": 2000,
+          "pc_success": 5.0,
+          "n": 20,
+          "avg_max_reward": 1.4222691023969882
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "stick-pull-v3",
+      "pooled_success_pct": 7.5,
+      "wilson95_lo": 2.5835556771858226,
+      "wilson95_hi": 19.864530159097523,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        10.0,
+        5.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 1.5134816890329725,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 10.0,
+          "n": 20,
+          "avg_max_reward": 1.2430368835022183
+        },
+        {
+          "seed": 2000,
+          "pc_success": 5.0,
+          "n": 20,
+          "avg_max_reward": 1.7839264945637268
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "stick-push-v3",
+      "pooled_success_pct": 10.0,
+      "wilson95_lo": 3.957888759557486,
+      "wilson95_hi": 23.052074380473897,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        20.0,
+        0.0
+      ],
+      "seed_rate_std": 10.0,
+      "mean_avg_max_reward": 0.8609009464290304,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 20.0,
+          "n": 20,
+          "avg_max_reward": 1.6094113157460552
+        },
+        {
+          "seed": 2000,
+          "pc_success": 0.0,
+          "n": 20,
+          "avg_max_reward": 0.11239057711200547
+        }
+      ],
+      "midband": false
+    },
+    {
+      "task": "sweep-into-v3",
+      "pooled_success_pct": 62.5,
+      "wilson95_lo": 47.032160054531914,
+      "wilson95_hi": 75.7772264642083,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        60.0,
+        65.0
+      ],
+      "seed_rate_std": 2.5,
+      "mean_avg_max_reward": 6.7214305693130285,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 60.0,
+          "n": 20,
+          "avg_max_reward": 6.593050144551188
+        },
+        {
+          "seed": 2000,
+          "pc_success": 65.0,
+          "n": 20,
+          "avg_max_reward": 6.849810994074869
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "sweep-v3",
+      "pooled_success_pct": 52.5,
+      "wilson95_lo": 37.497106853929736,
+      "wilson95_hi": 67.06477044981831,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        45.0,
+        60.0
+      ],
+      "seed_rate_std": 7.5,
+      "mean_avg_max_reward": 5.931513189726693,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 45.0,
+          "n": 20,
+          "avg_max_reward": 5.406868426914931
+        },
+        {
+          "seed": 2000,
+          "pc_success": 60.0,
+          "n": 20,
+          "avg_max_reward": 6.4561579525384545
+        }
+      ],
+      "midband": true
+    },
+    {
+      "task": "window-close-v3",
+      "pooled_success_pct": 72.5,
+      "wilson95_lo": 57.16474916687543,
+      "wilson95_hi": 83.89214656685692,
+      "pooled_n": 40,
+      "seed_rates_pct": [
+        85.0,
+        60.0
+      ],
+      "seed_rate_std": 12.5,
+      "mean_avg_max_reward": 4.887094426405136,
+      "per_seed": [
+        {
+          "seed": 1000,
+          "pc_success": 85.0,
+          "n": 20,
+          "avg_max_reward": 5.446837746365642
+        },
+        {
+          "seed": 2000,
+          "pc_success": 60.0,
+          "n": 20,
+          "avg_max_reward": 4.327351106444631
+        }
+      ],
+      "midband": true
+    }
+  ],
+  "config": {
+    "tasks": [
+      "assembly-v3",
+      "basketball-v3",
+      "bin-picking-v3",
+      "box-close-v3",
+      "button-press-topdown-v3",
+      "button-press-topdown-wall-v3",
+      "button-press-wall-v3",
+      "coffee-pull-v3",
+      "coffee-push-v3",
+      "dial-turn-v3",
+      "disassemble-v3",
+      "door-close-v3",
+      "door-lock-v3",
+      "door-unlock-v3",
+      "drawer-close-v3",
+      "faucet-close-v3",
+      "hammer-v3",
+      "hand-insert-v3",
+      "handle-press-side-v3",
+      "handle-pull-side-v3",
+      "handle-pull-v3",
+      "lever-pull-v3",
+      "peg-unplug-side-v3",
+      "pick-out-of-hole-v3",
+      "pick-place-wall-v3",
+      "plate-slide-back-side-v3",
+      "plate-slide-back-v3",
+      "plate-slide-side-v3",
+      "push-back-v3",
+      "push-wall-v3",
+      "reach-wall-v3",
+      "shelf-place-v3",
+      "soccer-v3",
+      "stick-pull-v3",
+      "stick-push-v3",
+      "sweep-into-v3",
+      "sweep-v3",
+      "window-close-v3"
+    ],
+    "seeds": [
+      1000,
+      2000
+    ],
+    "n_episodes": 20,
+    "ckpt": "/home/user/Desktop/vla_projects/RESEARCH/active/_harness-faithful-smolvla/ckpt_smolvla_metaworld"
+  },
+  "wall_s": 7809.01363158226
+}

@@ -247,6 +247,8 @@ def main():
     ap.add_argument("--seed", type=int, default=1000)
     ap.add_argument("--device", default="cuda")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--videos_dir", default=None, help="if set, render rollout MP4s here")
+    ap.add_argument("--max_render", type=int, default=0, help="number of episodes to render to video")
     args = ap.parse_args()
 
     torch.manual_seed(args.seed)
@@ -297,8 +299,8 @@ def main():
         preprocessor=pre,
         postprocessor=post,
         n_episodes=args.n_episodes,
-        max_episodes_rendered=0,
-        videos_dir=None,
+        max_episodes_rendered=args.max_render,
+        videos_dir=Path(args.videos_dir) if args.videos_dir else None,
         start_seed=args.seed,
     )
     agg = info["aggregated"]

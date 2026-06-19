@@ -1,14 +1,21 @@
-# Python
+# Large model files
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+
+# Teacher data directories (GBs each)
+results/teacher_*/
+
+# Student checkpoint directories (865MB each)
+results/student_*/
+
+# Python cache
 __pycache__/
-*.py[cod]
-*$py.class
 *.pyc
+*.pyo
+.ipynb_checkpoints/
 
-# Virtual environments
-venv/
-.venv/
-env/
-ENV/
-
-# OS
-.DS_Store
+# Misc
+*.tmp
+nohup.out

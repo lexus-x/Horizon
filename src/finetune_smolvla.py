@@ -99,7 +99,13 @@ def main():
                 break
             batch = pre(batch)
             loss_dict = policy.forward(batch)
-            loss = loss_dict["loss"] if isinstance(loss_dict, dict) else loss_dict
+            # this lerobot's SmolVLA.forward returns (loss, info_dict)
+            if isinstance(loss_dict, tuple):
+                loss = loss_dict[0]
+            elif isinstance(loss_dict, dict):
+                loss = loss_dict["loss"]
+            else:
+                loss = loss_dict
             # NIAC consistency term added in the next increment (mode == "niac")
             opt.zero_grad()
             loss.backward()

@@ -1,0 +1,17 @@
+===== OVERNIGHT START 2026. 06. 11. (목) 09:42:45 KST =====
+===== JOB1 OL-teacher plate 09:42 =====
+>>> [09:42] collect_teacher.py --task plate-slide-v3 --n_action_steps 50 --n_episodes 50 --seed 2000 --snap_stride 2 --out ../results/teacher_plate-slide-v3_OL
+>>> [09:47] distill_smolvla.py --shards ../results/teacher_plate-slide-v3_OL --success_only 1 --steps 1500 --batch_size 16 --lr 1e-4 --out ../results/student_plate_OL
+>>> [09:53] cascade_eval.py --ckpt ../results/student_plate_OL --proc_ckpt /home/user/Desktop/vla_projects/RESEARCH/active/_harness-faithful-smolvla/ckpt_smolvla_metaworld --task plate-slide-v3 --mode base --n_action_steps 50 --n_episodes 50 --seed 1000 --batch_size 10 --out ../results/horizon_plate_studentOL.json
+===== JOB1 OL-teacher push 09:56 =====
+>>> [09:56] collect_teacher.py --task push-v3 --n_action_steps 50 --n_episodes 50 --seed 2000 --snap_stride 2 --out ../results/teacher_push-v3_OL
+>>> [10:00] distill_smolvla.py --shards ../results/teacher_push-v3_OL --success_only 1 --steps 1500 --batch_size 16 --lr 1e-4 --out ../results/student_push_OL
+>>> [10:05] cascade_eval.py --ckpt ../results/student_push_OL --proc_ckpt /home/user/Desktop/vla_projects/RESEARCH/active/_harness-faithful-smolvla/ckpt_smolvla_metaworld --task push-v3 --mode base --n_action_steps 50 --n_episodes 50 --seed 1000 --batch_size 10 --out ../results/horizon_push_studentOL.json
+===== JOB2 push curated pred 10:09 =====
+>>> [10:09] distill_smolvla.py --shards ../results/teacher_push_pred --success_only 1 --steps 1500 --batch_size 16 --lr 1e-4 --out ../results/student_push_pred
+>>> [10:15] cascade_eval.py --ckpt ../results/student_push_pred --proc_ckpt /home/user/Desktop/vla_projects/RESEARCH/active/_harness-faithful-smolvla/ckpt_smolvla_metaworld --task push-v3 --mode base --n_action_steps 50 --n_episodes 50 --seed 1000 --batch_size 10 --out ../results/horizon_push_student_pred.json
+===== JOB2 push curated unpred 10:19 =====
+>>> [10:19] distill_smolvla.py --shards ../results/teacher_push_unpred --success_only 1 --steps 1500 --batch_size 16 --lr 1e-4 --out ../results/student_push_unpred
+>>> [10:24] cascade_eval.py --ckpt ../results/student_push_unpred --proc_ckpt /home/user/Desktop/vla_projects/RESEARCH/active/_harness-faithful-smolvla/ckpt_smolvla_metaworld --task push-v3 --mode base --n_action_steps 50 --n_episodes 50 --seed 1000 --batch_size 10 --out ../results/horizon_push_student_unpred.json
+===== ALL JOBS DONE 2026. 06. 11. (목) 10:28:39 KST =====
+===== SUMMARY WRITTEN 2026. 06. 11. (목) 10:28:39 KST =====

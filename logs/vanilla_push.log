@@ -1,0 +1,38 @@
+=== finetune push-v3 ('Push the puck to a goal') mode=vanilla eps=2000..2099 steps=1500 ===
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+trainable params: 99.9M / 450.0M (22.2%)
+dataset frames: 7568, episodes: 100
+step     0  loss=0.7870  (3484ms/step)
+step    50  loss=0.0345  (811ms/step)
+step   100  loss=0.0566  (761ms/step)
+step   150  loss=0.0263  (751ms/step)
+step   200  loss=0.0430  (748ms/step)
+step   250  loss=0.0324  (746ms/step)
+step   300  loss=0.0214  (742ms/step)
+step   350  loss=0.0429  (742ms/step)
+step   400  loss=0.0311  (743ms/step)
+step   450  loss=0.0225  (742ms/step)
+step   500  loss=0.0250  (742ms/step)
+step   550  loss=0.0175  (739ms/step)
+step   600  loss=0.0385  (726ms/step)
+step   650  loss=0.0219  (715ms/step)
+step   700  loss=0.0120  (706ms/step)
+step   750  loss=0.0160  (699ms/step)
+step   800  loss=0.0251  (691ms/step)
+step   850  loss=0.0258  (684ms/step)
+step   900  loss=0.0230  (679ms/step)
+step   950  loss=0.0142  (675ms/step)
+step  1000  loss=0.0360  (671ms/step)
+step  1050  loss=0.0310  (669ms/step)
+step  1100  loss=0.0194  (666ms/step)
+step  1150  loss=0.0180  (657ms/step)
+step  1200  loss=0.0155  (649ms/step)
+step  1250  loss=0.0184  (642ms/step)
+step  1300  loss=0.0204  (632ms/step)
+step  1350  loss=0.0212  (621ms/step)
+step  1400  loss=0.0124  (613ms/step)
+step  1450  loss=0.0092  (606ms/step)
+saved -> ../results/vanilla_push-v3  (895s)

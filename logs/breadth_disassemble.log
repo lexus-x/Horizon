@@ -1,0 +1,44 @@
+=== [disassemble] START 03:43 ===
+Traceback (most recent call last):
+  File "/home/user/Desktop/vla_projects/RESEARCH/active/horizon/src/cascade_eval.py", line 29, in <module>
+    from lerobot.envs.configs import MetaworldEnv as MetaworldEnvConfig
+  File "/home/user/lerobot/src/lerobot/envs/__init__.py", line 15, in <module>
+    from .configs import AlohaEnv, EnvConfig, HubEnvConfig, PushtEnv  # noqa: F401
+  File "/home/user/lerobot/src/lerobot/envs/configs.py", line 19, in <module>
+    import draccus
+ModuleNotFoundError: No module named 'draccus'
+Traceback (most recent call last):
+  File "/home/user/Desktop/vla_projects/RESEARCH/active/horizon/src/cascade_eval.py", line 29, in <module>
+    from lerobot.envs.configs import MetaworldEnv as MetaworldEnvConfig
+  File "/home/user/lerobot/src/lerobot/envs/__init__.py", line 15, in <module>
+    from .configs import AlohaEnv, EnvConfig, HubEnvConfig, PushtEnv  # noqa: F401
+  File "/home/user/lerobot/src/lerobot/envs/configs.py", line 19, in <module>
+    import draccus
+ModuleNotFoundError: No module named 'draccus'
+Traceback (most recent call last):
+  File "/home/user/Desktop/vla_projects/RESEARCH/active/horizon/src/collect_teacher.py", line 29, in <module>
+    from lerobot.envs.configs import MetaworldEnv as MetaworldEnvConfig
+  File "/home/user/lerobot/src/lerobot/envs/__init__.py", line 15, in <module>
+    from .configs import AlohaEnv, EnvConfig, HubEnvConfig, PushtEnv  # noqa: F401
+  File "/home/user/lerobot/src/lerobot/envs/configs.py", line 19, in <module>
+    import draccus
+ModuleNotFoundError: No module named 'draccus'
+Traceback (most recent call last):
+  File "/home/user/Desktop/vla_projects/RESEARCH/active/horizon/src/distill_smolvla.py", line 27, in <module>
+    from lerobot.policies.smolvla.modeling_smolvla import SmolVLAPolicy
+  File "/home/user/lerobot/src/lerobot/policies/__init__.py", line 15, in <module>
+    from .act.configuration_act import ACTConfig as ACTConfig
+  File "/home/user/lerobot/src/lerobot/policies/act/configuration_act.py", line 18, in <module>
+    from lerobot.configs.policies import PreTrainedConfig
+  File "/home/user/lerobot/src/lerobot/configs/policies.py", line 24, in <module>
+    import draccus
+ModuleNotFoundError: No module named 'draccus'
+Traceback (most recent call last):
+  File "/home/user/Desktop/vla_projects/RESEARCH/active/horizon/src/cascade_eval.py", line 29, in <module>
+    from lerobot.envs.configs import MetaworldEnv as MetaworldEnvConfig
+  File "/home/user/lerobot/src/lerobot/envs/__init__.py", line 15, in <module>
+    from .configs import AlohaEnv, EnvConfig, HubEnvConfig, PushtEnv  # noqa: F401
+  File "/home/user/lerobot/src/lerobot/envs/configs.py", line 19, in <module>
+    import draccus
+ModuleNotFoundError: No module named 'draccus'
+=== [disassemble] DONE 03:43 ===
